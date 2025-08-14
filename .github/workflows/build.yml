@@ -24,10 +24,10 @@ jobs:
         pip install pyinstaller requests PyQt5 plyer
 
     - name: Build with PyInstaller
-      run: pyinstaller --onefile ir_auto_proxy_tray.py
+      run: pyinstaller --onefile ir_auto_proxy_tray_v2.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
         name: proxy-finder
-        path: dist/ir_auto_proxy_tray.exe
+        path: dist/ir_auto_proxy_tray_v2.exe
